@@ -40,16 +40,17 @@ header {
 
 /* NAVIGATION */
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
+}
 
-    /* Hide menu by default */
+.navigation {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height .3s ease;
 }
 
 .navigation.open {
@@ -57,15 +58,15 @@ header {
 }
 
 .navigation a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     text-align: center;
-    padding: 0.9rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: .9rem;
+    transition: background-color .3s ease, color .3s ease;
 }
 
 .navigation a:hover {
-    background: white;
+    background: #fff;
     color: #4b0b73;
 }
 
@@ -92,7 +93,7 @@ main h1 {
 
 figure {
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform .3s ease;
 }
 
 figure:hover {
@@ -107,11 +108,11 @@ figure img {
     display: block;
     margin: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
 }
 
 figcaption {
-    margin-top: 0.6rem;
+    margin-top: .6rem;
     font-size: 1rem;
 }
 
@@ -120,11 +121,11 @@ figcaption {
 footer {
     margin-top: 2rem;
     background: #4b0b73;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
 footer p {
-    margin: 0.3rem;
+    margin: .3rem;
 }
