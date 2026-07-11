@@ -1,0 +1,33 @@
+@media screen and (min-width:768px){
+
+#menu{
+    display:none;
+}
+
+header{
+    padding:1rem 2rem;
+}
+
+.navigation{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:2rem;
+    width:auto;
+    margin-top:0;
+}
+
+.navigation a{
+    padding:.5rem 1rem;
+    border-radius:5px;
+}
+
+.gallery{
+    grid-template-columns:repeat(3,1fr);
+}
+
+figure img{
+    max-width:100%;
+}
+
+}
