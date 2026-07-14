@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A country page about Nigeria featuring general information and weather.">
+    <meta name="author" content="Kingsley Adeyi">
+
+    <title>Place - Nigeria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Nigeria</h1>
+</header>
+
+<main>
+
+    <section class="hero">
+        <picture>
+            <source media="(min-width:768px)" srcset="images/nigeria-large.webp">
+            <img src="images/nigeria-small.webp" alt="Beautiful scenery in Nigeria">
+        </picture>
+    </section>
+
+    <section class="card data">
+        <h2>Data</h2>
+
+        <p><strong>Area:</strong> 923,768 km²</p>
+        <p><strong>Population:</strong> 227 Million</p>
+        <p><strong>Capital:</strong> Abuja</p>
+        <p><strong>Languages:</strong> English</p>
+        <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+        <p><strong>Time Zone:</strong> UTC +1</p>
+        <p><strong>Calling Code:</strong> +234</p>
+        <p><strong>Internet TLD:</strong> .ng</p>
+
+    </section>
+
+    <section class="card weather">
+
+        <h2 class="weather-title">
+            Weather
+            <img src="images/weather.svg" alt="Weather Icon">
+        </h2>
+
+        <p><strong>Temperature:</strong> <span id="temperature">30°C</span></p>
+
+        <p><strong>Conditions:</strong> Sunny</p>
+
+        <p><strong>Wind:</strong> <span id="windspeed">15 km/h</span></p>
+
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+    </section>
+
+</main>
+
+<footer>
+
+<p>
+&copy;
+<span id="currentyear"></span>
+Kingsley Adeyi | Nigeria
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
