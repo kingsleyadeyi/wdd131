@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+
+    /* Hide hamburger button */
+    #menu {
+        display: none;
+    }
+
+    /* Header */
+    header {
+        padding: 1rem 2rem;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+        width: auto;
+        margin-top: 0;
+
+        /* Show menu permanently on desktop */
+        max-height: none;
+        overflow: visible;
+    }
+
+    .navigation a {
+        padding: .5rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* Gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        max-width: 100%;
+    }
+}

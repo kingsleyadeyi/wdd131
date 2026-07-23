@@ -1,0 +1,95 @@
+/* General Styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    margin: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+}
+
+/* Caption */
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Top Title */
+
+.title-row th {
+    background: #000;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* Column Headings */
+
+.header-row th {
+    background: #333;
+    color: white;
+    font-size: 1.5rem;
+    padding: 18px;
+}
+
+.header-row th:first-child {
+    background: #000;
+}
+
+/* Cells */
+
+th,
+td {
+    border: 1px solid #d8d8d8;
+    padding: 14px;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Zebra Striping */
+
+tbody tr:nth-child(even) {
+    background: #ececec;
+}
+
+tbody tr:nth-child(odd) {
+    background: white;
+}
+
+/* Check Marks */
+
+tbody td {
+    font-size: 2rem;
+}
+
+tbody td:nth-child(2),
+tbody td:nth-child(3),
+tbody td:nth-child(4) {
+    color: #5b4db5;
+}
+
+/* X Marks */
+
+tbody tr:nth-child(2) td:nth-child(2),
+tbody tr:nth-child(3) td:nth-child(2),
+tbody tr:nth-child(3) td:nth-child(3) {
+    color: #ff2d6b;
+}
