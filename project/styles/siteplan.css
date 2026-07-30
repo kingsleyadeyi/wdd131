@@ -1,0 +1,199 @@
+/* ===========================
+   BOM JOURNEY SITE PLAN
+   WDD 131
+=========================== */
+
+:root {
+    --primary: #0F4C81;
+    --secondary: #D4AF37;
+    --background: #F8F9FA;
+    --text: #222222;
+    --white: #ffffff;
+    --border: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: .5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: .95;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary);
+    display: inline-block;
+    padding-bottom: .3rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+    color: var(--primary);
+}
+
+p,
+li {
+    margin-bottom: .8rem;
+}
+
+ul {
+    padding-left: 1.4rem;
+}
+/* ===========================
+   TABLE
+=========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: .9rem;
+    text-align: left;
+}
+
+th {
+    background: var(--primary);
+    color: var(--white);
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* ===========================
+   WIREFRAMES
+=========================== */
+
+.wireframe {
+    border: 2px solid var(--primary);
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0 2rem;
+}
+
+.box {
+    border: 2px dashed var(--secondary);
+    background: #eef4fb;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: .8rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.hero {
+    min-height: 120px;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .8rem;
+}
+
+.half {
+    flex: 1;
+}
+
+.full {
+    width: 100%;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: .95rem;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo-icon {
+    font-size: 3rem;
+}
+
+.logo-text {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
