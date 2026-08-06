@@ -1,0 +1,378 @@
+/* ==========================================================
+   BOM JOURNEY
+   MAIN STYLESHEET
+   WDD 131
+   ========================================================== */
+
+/* ==========================================================
+   ROOT VARIABLES
+   ========================================================== */
+
+:root {
+
+    /* Colors */
+    --primary: #0F4C81;
+    --primary-dark: #09365a;
+    --secondary: #D4AF37;
+
+    --background: #F8F9FA;
+    --surface: #FFFFFF;
+
+    --text: #222222;
+    --text-light: #666666;
+
+    --border: #D9D9D9;
+
+    /* Layout */
+    --max-width: 1200px;
+    --radius: 12px;
+
+    /* Shadows */
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    /* Animation */
+    --transition: 0.3s ease;
+}
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================
+   BASE
+   ========================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/* ==========================================================
+   TYPOGRAPHY
+   ========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+    line-height: 1.3;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+/* ==========================================================
+   LAYOUT
+   ========================================================== */
+
+.container {
+    width: min(90%, var(--max-width));
+    margin-inline: auto;
+}
+
+section {
+    padding: 4rem 0;
+}
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.site-header {
+    background: var(--primary);
+    color: var(--surface);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    width: min(90%, var(--max-width));
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+}
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.logo-icon {
+    font-size: 2.3rem;
+}
+
+.logo-text h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.logo-text p {
+    color: var(--secondary);
+    font-size: .8rem;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================
+   NAVIGATION
+   ========================================================== */
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-nav a {
+    color: white;
+    font-weight: 600;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: .9rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    opacity: .9;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.site-footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.site-footer p {
+    margin: .3rem 0;
+    color: white;
+}
+/* ==========================================================
+   HERO SECTION
+   ========================================================== */
+
+.hero {
+    background: linear-gradient(rgba(15, 76, 129, 0.90),
+                rgba(15, 76, 129, 0.90));
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #f4f4f4;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================
+   GRID LAYOUTS
+   ========================================================== */
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ==========================================================
+   CARD
+   ========================================================== */
+
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================
+   SECTION TITLE
+   ========================================================== */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    margin-bottom: .8rem;
+}
+
+.section-title p {
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==========================================================
+   UTILITIES
+   ========================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+/* ==========================================================
+   FORM ELEMENTS
+   ========================================================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: .9rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+/* ==========================================================
+   END OF MAIN STYLESHEET
+   ========================================================== */

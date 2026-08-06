@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BOM Journey | Passport</title>
+
+    <meta name="description"
+          content="Create your BOM Journey Passport and begin your personal Book of Mormon study journey.">
+
+    <meta name="author"
+          content="Kingsley Adeyi">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Styles -->
+
+    <link rel="stylesheet"
+          href="styles/main.css">
+
+    <link rel="stylesheet"
+          href="styles/pages.css">
+
+    <link rel="stylesheet"
+          href="styles/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+     HEADER
+========================== -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <span class="logo-icon">📖⭐</span>
+
+            <div class="logo-text">
+
+                <h1>BOM Journey</h1>
+
+                <p>Book of Mormon Journey</p>
+
+            </div>
+
+        </a>
+
+        <nav class="main-nav">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="journey.html">
+                        Journey
+                    </a>
+                </li>
+
+                <li>
+                    <a href="scriptures.html">
+                        Scriptures
+                    </a>
+                </li>
+
+                <li>
+                    <a href="passport.html"
+                       class="active">
+                        Passport
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="references.html">
+                        References
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+<!-- ==========================
+     HERO
+========================== -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <h2>Your Scripture Passport</h2>
+
+        <p>
+
+            Every great journey begins with a first step.
+            Create your BOM Journey Passport and begin
+            building a lifelong habit of studying the
+            Book of Mormon.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     PASSPORT FORM
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Create Your Passport</h2>
+
+            <p>
+
+                Enter a few details below to personalize
+                your scripture journey. Your passport is
+                saved on this device so you can continue
+                your progress anytime.
+
+            </p>
+
+        </div>
+                <form id="passportForm">
+
+            <label for="username">
+
+                Your Name
+
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your name"
+                required>
+
+            <label for="goal">
+
+                Study Goal
+
+            </label>
+
+            <select
+                id="goal"
+                name="goal"
+                required>
+
+                <option value="" selected disabled>
+
+                    Select Your Goal
+
+                </option>
+
+                <option value="Read Daily">
+
+                    Read Daily
+
+                </option>
+
+                <option value="Read Weekly">
+
+                    Read Weekly
+
+                </option>
+
+                <option value="Complete the Book of Mormon">
+
+                    Complete the Book of Mormon
+
+                </option>
+
+            </select>
+
+            <label for="favoriteBook">
+
+                Favorite Book of Mormon Book
+
+            </label>
+
+            <select
+                id="favoriteBook"
+                name="favoriteBook"
+                required>
+
+                <option value="" selected disabled>
+
+                    Select a Book
+
+                </option>
+
+                <option>1 Nephi</option>
+                <option>2 Nephi</option>
+                <option>Jacob</option>
+                <option>Enos</option>
+                <option>Jarom</option>
+                <option>Omni</option>
+                <option>Words of Mormon</option>
+                <option>Mosiah</option>
+                <option>Alma</option>
+                <option>Helaman</option>
+                <option>3 Nephi</option>
+                <option>4 Nephi</option>
+                <option>Mormon</option>
+                <option>Ether</option>
+                <option>Moroni</option>
+
+            </select>
+
+            <button
+                type="submit"
+                class="btn">
+
+                Create Passport
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <!-- ==========================
+             PASSPORT CARD
+        =========================== -->
+
+        <div
+            class="passport-card"
+            id="passportCard">
+
+            <div class="passport-header">
+
+                <h2>
+
+                    BOM Journey Passport
+
+                </h2>
+
+                <p>
+
+                    Your Personal Scripture Record
+
+                </p>
+
+            </div>
+
+            <div class="passport-body">
+
+                <p>
+
+                    <strong>Name:</strong>
+
+                    <span id="displayName">
+
+                        Not Created Yet
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Study Goal:</strong>
+
+                    <span id="displayGoal">
+
+                        Not Selected
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Favorite Book:</strong>
+
+                    <span id="displayBook">
+
+                        Not Selected
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Journey Status:</strong>
+
+                    <span id="displayStatus">
+
+                        Ready to Begin
+
+                    </span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================
+     CONTINUE YOUR JOURNEY
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="card" style="text-align:center;">
+
+            <h2>Continue Your Journey</h2>
+
+            <p>
+
+                Your passport is your starting point.
+                Continue by reading the Book of Mormon,
+                marking chapters as you complete them,
+                and following your spiritual journey.
+
+            </p>
+
+            <br>
+
+            <a href="scriptures.html"
+               class="btn">
+
+                📖 Read Scriptures
+
+            </a>
+
+            &nbsp;
+
+            <a href="journey.html"
+               class="btn">
+
+                🗺️ View Journey
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ==========================
+     FOOTER
+========================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <p>
+
+            <strong>BOM Journey</strong>
+
+        </p>
+
+        <p>
+
+            Helping individuals build meaningful
+            Book of Mormon study habits.
+
+        </p>
+
+        <p>
+
+            &copy;
+            <span class="current-year"></span>
+
+            Kingsley Adeyi |
+            WDD 131 Final Project
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ==========================
+     SCRIPTS
+========================== -->
+
+<script src="scripts/main.js"></script>
+<script src="scripts/storage.js"></script>
+
+</body>
+
+</html>

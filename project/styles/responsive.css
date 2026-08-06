@@ -1,0 +1,126 @@
+/* ==========================================================
+   BOM JOURNEY
+   RESPONSIVE STYLES
+   WDD 131
+========================================================== */
+
+/* ==========================================================
+   TABLETS (992px and below)
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================
+   MOBILE (768px and below)
+========================================================== */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .passport-body p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .4rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ==========================================================
+   SMALL PHONES (480px and below)
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-icon {
+        font-size: 2.5rem;
+    }
+
+    .logo-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .main-nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .card,
+    .progress-card,
+    .passport-card,
+    #passportForm {
+        padding: 1.5rem;
+    }
+}
+
+/* ==========================================================
+   LARGE SCREENS (1200px and above)
+========================================================== */
+
+@media (min-width: 1200px) {
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BOM Journey | Scriptures</title>
+
+    <meta name="description"
+          content="Read the Book of Mormon online with BOM Journey.">
+
+    <meta name="author"
+          content="Kingsley Adeyi">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">📖⭐</span>
+
+            <div class="logo-text">
+
+                <h1>BOM Journey</h1>
+
+                <p>Book of Mormon Journey</p>
+
+            </div>
+
+        </a>
+
+        <nav class="main-nav">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="journey.html">Journey</a></li>
+
+                <li><a href="scriptures.html" class="active">Scriptures</a></li>
+
+                <li><a href="passport.html">Passport</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="references.html">References</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h2>Read the Book of Mormon</h2>
+
+            <p>
+
+                Select a book and chapter below to begin reading the
+                Book of Mormon.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Scripture Reader</h2>
+
+                <p>
+
+                    Choose a Book and Chapter, then click
+                    <strong>Read Chapter</strong>.
+
+                </p>
+
+            </div>
+                        <div class="card">
+
+                <div class="form-group">
+
+                    <label for="bookSelect">
+                        Book of Mormon Book
+                    </label>
+
+                    <select id="bookSelect">
+
+                        <option value="">Select a Book</option>
+
+                        <option value="1nephi">1 Nephi</option>
+                        <option value="2nephi">2 Nephi</option>
+                        <option value="jacob">Jacob</option>
+                        <option value="enos">Enos</option>
+                        <option value="jarom">Jarom</option>
+                        <option value="omni">Omni</option>
+                        <option value="wordsofmormon">Words of Mormon</option>
+                        <option value="mosiah">Mosiah</option>
+                        <option value="alma">Alma</option>
+                        <option value="helaman">Helaman</option>
+                        <option value="3nephi">3 Nephi</option>
+                        <option value="4nephi">4 Nephi</option>
+                        <option value="mormon">Mormon</option>
+                        <option value="ether">Ether</option>
+                        <option value="moroni">Moroni</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="chapterSelect">
+                        Chapter
+                    </label>
+
+                    <select id="chapterSelect">
+
+                        <option value="">Select a Chapter</option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    id="readButton"
+                    class="btn"
+                    type="button">
+
+                    Read Chapter
+
+                </button>
+
+            </div>
+
+            <br>
+
+            <div class="card">
+
+                <h2 id="chapterTitle">
+
+                    Scripture will appear here
+
+                </h2>
+
+                <div id="scriptureContent">
+
+                    <p>
+
+                        Select a Book, choose a Chapter,
+                        then click <strong>Read Chapter</strong>.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <div style="text-align:center;">
+
+                <button
+                    id="completeChapter"
+                    class="btn"
+                    type="button">
+
+                    ✓ Mark Chapter as Read
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+        </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p><strong>BOM Journey</strong></p>
+
+            <p>
+                Helping individuals build meaningful Book of Mormon study habits.
+            </p>
+
+            <p>
+                &copy; <span class="current-year"></span>
+                Kingsley Adeyi | WDD 131 Final Project
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/scriptures.js"></script>
+
+</body>
+
+</html>
